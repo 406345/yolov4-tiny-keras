@@ -183,7 +183,7 @@ if __name__ == "__main__":
     #----------------------------------------------------#
     #   获得图片路径和标签
     #----------------------------------------------------#
-    annotation_path = '2007_train.txt'
+    annotation_path = R'Z:\dev\aidata\data\train.txt'
     #------------------------------------------------------#
     #   训练后的模型保存的位置，保存在logs文件夹里面
     #------------------------------------------------------#
@@ -299,8 +299,8 @@ if __name__ == "__main__":
     # 调整非主干模型first
     if True:
         Init_epoch = 0
-        Freeze_epoch = 50
-        batch_size = 32
+        Freeze_epoch = 10
+        batch_size = 4
         learning_rate_base = 1e-3
 
         if Cosine_scheduler:
@@ -338,8 +338,8 @@ if __name__ == "__main__":
     # 解冻后训练
     if True:
         Freeze_epoch = 50
-        Epoch = 100
-        batch_size = 16
+        Epoch = 10
+        batch_size = 4
         learning_rate_base = 1e-4
 
         if Cosine_scheduler:

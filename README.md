@@ -1,3 +1,15 @@
+## DS
+步骤：
+
+1. 使用convert2train.py 生成VOC格式以及train.txt
+2. 使用kmean_for_anchors.py生成anchor
+3. 把 anchor 和 train.txt 放到正确的地方
+4. 运行train.py训练
+
+PS: 所有输出都需要修改代码中的目录地址
+
+LAST: Enjoy it
+
 ## YOLOV4-Tiny：You Only Look Once-Tiny目标检测模型在Keras当中的实现
 ---
 

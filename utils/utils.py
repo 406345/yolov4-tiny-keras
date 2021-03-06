@@ -1,5 +1,7 @@
 from functools import reduce
 
+import os
+import io
 import cv2
 import keras
 import keras.backend as K
